@@ -1,6 +1,6 @@
 {
   "name": "owusportswear",
-  "homepage": "https://pa-may.github.io/sportswear",
+  "homepage": "http://pa-may.github.io/owusportswear",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -49,5 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   }
 }

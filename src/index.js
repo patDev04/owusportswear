@@ -8,7 +8,7 @@ import { AppProvider } from "./Data/content";
 ReactDOM.render(
   <React.StrictMode>
     <AppProvider>
-      <Router basename="sportswear">
+      <Router basename="owusportswear">
         <App />
       </Router>
     </AppProvider>
