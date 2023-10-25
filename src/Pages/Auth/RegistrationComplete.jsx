@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import { UserOutlined, MailOutlined, UserAddOutlined } from '@ant-design/icons';
-import { Input } from 'antd';
-import { RiLockPasswordLine } from 'react-icons/ri';
-import './login.scss';
+import React, { useState, useEffect } from "react";
+import { MailOutlined } from "@ant-design/icons";
+import { Input } from "antd";
+import { RiLockPasswordLine } from "react-icons/ri";
+import "./login.scss";
 
 const RegistrationComplete = ({ history }) => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   useEffect(() => {
-    setEmail(window.localStorage.getItem('emailForRegistration'));
+    setEmail(window.localStorage.getItem("emailForRegistration"));
   }, []);
 
   const handleCompleteForm = async (e) => {
