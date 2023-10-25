@@ -1,0 +1,57 @@
+// @import './variables.scss';
+
+// .latestNav {
+//   border-top: solid $grey-border 0.1rem;
+//   border-bottom: solid $grey-border 0.1rem;
+//   padding: 2rem;
+//   margin: 1rem 12rem;
+//   display: flex;
+
+//   @include breakpoint(tablet-landscape) {
+//     margin: 0 2rem;
+//   }
+//   @include breakpoint(mobile-landscape) {
+//     padding: 2rem 0rem;
+//     flex-direction: column;
+//     margin: 2rem;
+//   }
+
+//   &__txt {
+//     font-family: 'Tourney', cursive;
+//     color: black;
+//     font-weight: 900;
+//     font-size: 4rem;
+//     margin-right: 5rem;
+//     @include breakpoint(mobile-landscape) {
+//       margin-bottom: 1rem;
+//     }
+//   }
+
+//   &__container {
+//     width: 100%;
+//     display: flex;
+//     align-items: center;
+//     @include breakpoint(mobile-landscape) {
+//       display: flex;
+//       flex-wrap: wrap;
+//       // justify-content: space-between;
+//     }
+//   }
+
+//   &__links {
+//     font-weight: 300;
+//     margin: 0 1rem;
+//     padding: 1rem;
+//     border: solid $grey-border 0.1rem;
+//     transform: 0.4s ease all;
+//     font-size: 1.6rem;
+//     cursor: pointer;
+//     &:hover {
+//       background-color: whitesmoke;
+//     }
+//     @include breakpoint(mobile-landscape) {
+//       margin: 0;
+//       margin-right: 1.5rem;
+//     }
+//   }
+// }

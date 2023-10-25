@@ -1,0 +1,28 @@
+@import "../../Sass/Variables.scss";
+
+.offer {
+  &-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 10px;
+    @include breakpoint(tablet-portrait) {
+      display: block;
+    }
+  }
+
+  &-product-container {
+    background-color: whitesmoke;
+    padding: 1rem;
+  }
+
+  &-img {
+    width: 100%;
+    height: 100%;
+    margin-right: 3rem;
+    object-fit: cover;
+    object-position: center;
+    @include breakpoint(tablet-portrait) {
+      height: 40vh;
+    }
+  }
+}

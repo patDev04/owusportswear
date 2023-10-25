@@ -1,0 +1,18 @@
+@import "../../Sass/Variables.scss";
+
+.informationStrip {
+  background-color: $theme;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+
+  &-txt {
+    color: white;
+    font-size: 12px;
+    text-transform: capitalize;
+    font-family: "Didact Gothic", sans-serif;
+    @include breakpoint(mobile-landscape) {
+      font-size: 10px;
+    }
+  }
+}

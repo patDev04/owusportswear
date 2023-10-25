@@ -1,0 +1,79 @@
+@import "../../Sass/Variables.scss";
+
+.service {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 3rem 0;
+  gap: 10px;
+
+  @include breakpoint(mobile-landscape) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &-icon {
+    font-size: 30px;
+    color: $theme;
+    margin-right: 1rem;
+  }
+
+  &-info {
+    background-color: white;
+    display: flex;
+    padding-left: 15px;
+    width: 100%;
+    text-align: center;
+    border-left: solid rgb(221, 221, 221) 1px;
+
+    @include breakpoint(tablet-landscape) {
+      padding-left: 0;
+    }
+    @include breakpoint(tablet-portrait) {
+      display: block;
+    }
+  }
+
+  &-info:nth-child(1) {
+    border-left: none;
+
+    @include breakpoint(mobile-landscape) {
+      padding-left: 0;
+    }
+  }
+  &-info:nth-child(3) {
+    @include breakpoint(mobile-landscape) {
+      border-left: none;
+    }
+  }
+  &-info:nth-child(2),
+  &-info:nth-child(4) {
+    @include breakpoint(mobile-landscape) {
+      padding-left: 15px;
+    }
+  }
+}
+
+.service-box {
+  text-align: left;
+  @include breakpoint(tablet-portrait) {
+    text-align: center;
+  }
+}
+
+.service-info h1 {
+  font-size: 18px;
+  font-family: "Tourney", cursive;
+  font-weight: 900;
+}
+.service-info h2 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+.service-info p {
+  font-size: 15px;
+  font-weight: 300;
+
+  @include breakpoint(tablet-portrait) {
+    font-size: 12px;
+  }
+}

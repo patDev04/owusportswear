@@ -1,0 +1,25 @@
+.rating {
+  border-bottom: solid rgb(177, 177, 177) 1px;
+  background-color: whitesmoke;
+
+  &-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+  }
+  &-box {
+    text-align: center;
+    padding: 2rem;
+    border-right: solid rgb(177, 177, 177) 1px;
+    text-transform: uppercase;
+  }
+
+  &-title {
+    font-size: 24px;
+  }
+
+  &-text {
+    font-size: 18px;
+  }
+}

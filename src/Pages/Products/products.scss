@@ -1,0 +1,154 @@
+@import '../../Sass/Variables.scss';
+
+.products {
+  margin: 2rem 4rem;
+  position: relative;
+  // display: inline-block;
+  display: flex;
+
+  &-left {
+    // position: fixed;
+    // top: 0;
+    padding: 1rem;
+    // top: 15rem;
+    // z-index: -1;
+    flex: 20%;
+  }
+  &-right {
+    position: relative;
+    // right: 0;
+    // float: right;
+    // width: 85%;
+    flex: 80%;
+  }
+
+  &-filter {
+    font-size: 1.3rem;
+    font-size: 900;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color: $theme;
+  }
+
+  &-filterItems {
+    margin: 2rem 0;
+    border-bottom: solid 1px rgb(228, 228, 228);
+    padding: 1rem 0;
+  }
+  &-filterTitle {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  &-inputItems {
+    display: flex;
+    align-items: center;
+  }
+
+  &-input {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: none;
+    outline: none;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+
+  &-label {
+    font-size: 1.6rem;
+    text-transform: capitalize;
+  }
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-catergoryHeader {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    background-color: white;
+    margin: 2rem 0;
+  }
+
+  &-length {
+    font-weight: 400;
+    color: grey;
+    margin-left: 1rem;
+    font-size: 1.6rem;
+  }
+
+  &-categoryContainer {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: whitesmoke;
+    padding: 2rem;
+  }
+
+  &-sort {
+    & select {
+      width: 10rem;
+      margin-left: 1rem;
+      height: 3rem;
+      font-size: 1.3rem;
+      border: solid rgb(210, 210, 210) 1px;
+      outline: none;
+      cursor: pointer;
+      border-radius: 0;
+    }
+  }
+}
+
+option {
+  font-size: 1.3rem;
+  font-family: inherit;
+  padding: 1rem;
+}
+
+.range {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  & span {
+    font-size: 1.6rem;
+  }
+  & input {
+    margin: 0 1rem;
+    color: $theme;
+    width: 100%;
+    fill: red;
+    // height: 1px;
+    cursor: pointer;
+  }
+}
+
+input[type='range'] {
+  -webkit-appearance: none;
+  background-color: $theme;
+  height: 1px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: $theme;
+  width: 10px;
+  height: 16px;
+}
+
+input[type='range'] {
+  cursor: pointer;
+}
+
+.filter-color {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter-color input {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 0.5rem;
+}

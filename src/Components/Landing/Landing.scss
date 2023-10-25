@@ -1,0 +1,97 @@
+@import "../../Sass/Variables.scss";
+
+.landing {
+  position: relative;
+  height: 60vh;
+  background: #f1eff2;
+  background-image: url("../../Images/new-pics/IMG-20230115-WA0064.jpg");
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-size: contain;
+  @include breakpoint(tablet-landscape) {
+    background-position: bottom;
+  }
+
+  @include breakpoint(mobile-landscape) {
+    height: 72vh;
+  }
+
+  &__container {
+    position: relative;
+    top: 8rem;
+    @include breakpoint(tablet-landscape) {
+      width: 100%;
+      text-align: center;
+      top: 4rem;
+    }
+
+    @include breakpoint(mobile-landscape) {
+      top: 8rem;
+    }
+  }
+  &__headerOne {
+    font-size: 64px;
+    font-weight: 300;
+    line-height: 0.8;
+    margin-bottom: 1rem;
+    font-family: "Tourney", cursive;
+    color: teal;
+    @include breakpoint(mobile-landscape) {
+      font-size: 32px;
+    }
+  }
+  &__headerTwo {
+    font-size: 82px;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    line-height: 0.8;
+    font-family: "Tourney", cursive;
+    @include breakpoint(mobile-landscape) {
+      font-size: 50px;
+    }
+  }
+  &__subheader {
+    font-size: 28px;
+    @include breakpoint(mobile-landscape) {
+      font-size: 20px;
+    }
+  }
+}
+
+.service-container {
+  width: 25%;
+  @include breakpoint(tablet-landscape) {
+    position: relative;
+    width: 100%;
+    right: 0;
+  }
+}
+
+// .giff {
+//   position: absolute;
+//   bottom: 10rem;
+//   display: flex;
+//   background-color: #90bcff;
+//   border-radius: 2rem;
+//   overflow: hidden;
+//   @include breakpoint(tablet-landscape) {
+//     display: none;
+//   }
+//   &__txt {
+//     width: 30rem;
+//     padding: 1rem 1rem 1rem 2rem;
+//     font-size: 1.6rem;
+//   }
+// }
+
+// .levelupgiff {
+//   width: 6rem;
+//   height: 6rem;
+//   border: none;
+// }
+
+// .kitgiff {
+//   border: none;
+//   width: 100%;
+//   // width: 10rem;
+// }

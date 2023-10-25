@@ -1,0 +1,140 @@
+@import "../../Sass//Variables.scss";
+
+.nav {
+  position: fixed;
+  z-index: 5;
+  background-color: white;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.05);
+
+  &__mainNav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    position: relative;
+    @include breakpoint(tablet-landscape) {
+      padding: 2;
+    }
+
+    &-con {
+      display: flex;
+    }
+
+    &-hamburger {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 9rem;
+      color: black;
+      height: 40px;
+      width: 40px;
+      border: #ebe2e2 solid 0.1rem;
+      display: none;
+      cursor: pointer;
+      @include breakpoint(tablet-portrait) {
+        display: flex;
+      }
+    }
+
+    &-logo {
+      position: relative;
+      width: 20rem;
+      fill: $theme;
+      @include breakpoint(tablet-landscape) {
+        width: 20rem;
+      }
+      @include breakpoint(mobile-landscape) {
+        width: 150px;
+      }
+    }
+
+    &-menu {
+      height: fit-content;
+      align-items: center;
+      display: flex;
+      margin-left: 6rem;
+      @include breakpoint(tablet-landscape) {
+        display: none;
+      }
+    }
+    &-item {
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+    }
+
+    &-link {
+      height: 100%;
+      font-size: 1.6rem;
+      letter-spacing: 1px;
+      cursor: pointer;
+      text-decoration: none;
+      color: $text;
+      font-weight: 600;
+      text-transform: capitalize;
+      font-family: "Source Code Pro", monospace;
+
+      &.active {
+        color: $theme;
+      }
+      @include breakpoint(tablet-landscape) {
+        text-align: left;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+        margin: 0;
+        font-size: 2rem;
+        font-weight: 600;
+        border-bottom: rgb(194, 194, 194) solid 0.1px;
+
+        &:hover {
+          background-color: #14b993;
+        }
+      }
+    }
+
+    .seachInput {
+      @include breakpoint(tablet-landscape) {
+        display: none;
+      }
+    }
+
+    &-icon-con {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      position: relative;
+    }
+    &-icons {
+      font-size: 20px;
+      margin: 0 1rem;
+      cursor: pointer;
+    }
+
+    &-badge {
+      width: 28px;
+      height: 28px;
+      background-color: black;
+      border: solid white 1px;
+      color: white;
+      position: absolute;
+      border-radius: 50%;
+      top: -8px;
+      right: -8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 700;
+      @include breakpoint(tablet-landscape) {
+        width: 25px;
+        height: 24px;
+        top: -12px;
+      }
+    }
+  }
+}

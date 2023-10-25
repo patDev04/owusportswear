@@ -1,0 +1,83 @@
+// @import './Variables.scss';
+
+// .productCarousel {
+//   margin: 5rem 6rem;
+//   overflow: hidden;
+//   margin-bottom: 15rem;
+//   display: flex;
+//   justify-content: center;
+//   @include breakpoint(tablet-landscape) {
+//     margin: 5rem 0rem;
+//   }
+
+//   &__container {
+//     width: 100%;
+//     display: flex;
+//   }
+
+//   &__card {
+//     margin: 0 0.5rem;
+//     min-width: 26rem;
+//     transition: ease-in-out all;
+//     cursor: grab;
+//     background-color: white;
+//     transition: ease 0.3s;
+
+//     // @include breakpoint(tablet-landscape) {
+//     //   min-width: 26rem;
+//     // }
+
+//     @include breakpoint(tablet-portrait) {
+//       min-width: 22rem;
+//     }
+
+//     @include breakpoint(mobile-landscape) {
+//       min-width: 20rem;
+//     }
+//     @include breakpoint(mobile-portrait) {
+//       min-width: 18rem;
+//     }
+//   }
+
+//   &__img {
+//     height: 30rem;
+//     width: 100%;
+//     object-fit: cover;
+//     object-position: center;
+//   }
+//   &__header {
+//     margin: 0.5rem 0;
+//     font-size: 1.5rem;
+//     text-transform: capitalize;
+//     font-weight: 600;
+//   }
+
+//   &__card-text {
+//     font-size: 1.5rem;
+//     margin: 0.5rem 0;
+//     font-weight: 700;
+//   }
+
+//   &__buy-now-btn {
+//     padding: 1rem;
+//     background-color: black;
+//     color: white;
+//     margin-bottom: 0.5rem;
+//     text-decoration: none;
+//     text-align: center;
+//     &:hover {
+//       background-color: rgb(19, 19, 19);
+//     }
+//   }
+
+//   &__add-btn {
+//     display: block;
+//     padding: 1rem;
+//     border: solid black 0.01rem;
+//     text-decoration: none;
+//     text-align: center;
+//     &:hover {
+//       background-color: whitesmoke;
+//     }
+//   }
+// }

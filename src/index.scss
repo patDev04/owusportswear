@@ -1,0 +1,118 @@
+@import "./Sass/Variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Graduate&family=Squada+One&family=Tourney:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  padding-top: 11rem;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: "Didact Gothic", sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  //   font-size: 62.5%;
+  font-size: 1.5vmin;
+
+  // @include breakpoint(desktop-xlarge) {
+  //   font-size: 55.5%;
+  // }
+
+  // @include breakpoint(tablet-portrait) {
+  //   font-size: 52.5%;
+  // }
+
+  // @include breakpoint(mobile-landscape) {
+  //   font-size: 58.5%;
+  // }
+
+  // @include breakpoint(mobile-portrait) {
+  //   font-size: 42%.5;
+  // }
+}
+
+section {
+  margin: 0 44px;
+
+  @include breakpoint(mobile-landscape) {
+    margin: 0 20px;
+  }
+}
+
+.main-header {
+  font-size: 34px;
+  text-transform: uppercase;
+  font-family: "Tourney", cursive;
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-subtitle {
+  font-size: 18px;
+}
+
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6,
+// p,
+// figure,
+// picture {
+//   margin: 0;
+// }
+
+// img,
+// picture {
+//   max-width: 100%;
+//   display: block;
+// }
+
+//* form elements
+
+// input,
+// button,
+// textarea,
+// select {
+//   font: inherit;
+// }
+
+a {
+  font-family: inherit;
+  color: inherit;
+}
+// ul {
+//   list-style: none;
+//   font-family: inherit;
+// }
+// button {
+//   outline: none;
+//   border: none;
+//   font-family: inherit;
+//   letter-spacing: inherit;
+//   color: inherit;
+//   font-size: inherit;
+//   text-align: inherit;
+//   padding: 0;
+// }
+
+// input {
+//   border: none;
+//   outline: none;
+//   font-family: inherit;
+// }

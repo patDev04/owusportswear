@@ -1,0 +1,126 @@
+@import "../../Sass/Variables.scss";
+
+.popular {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  // @include breakpoint(tablet-landscape) {
+  //   padding: 0 2rem;
+  // }
+
+  &__title-box {
+    text-align: center;
+    margin: 5rem 0;
+  }
+
+  &__subtitle {
+    font-size: 2rem;
+  }
+  &__card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+  }
+
+  &__card {
+    height: 50vh;
+    position: relative;
+
+    &-img {
+      object-fit: cover;
+      object-position: center;
+      height: 100%;
+      width: 100%;
+      cursor: pointer;
+    }
+
+    &-box {
+      position: absolute;
+      left: 3px;
+      bottom: 2rem;
+    }
+
+    &-title {
+      width: fit-content;
+      width: -moz-fit-content;
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      background-color: white;
+      font-family: "Tourney", cursive;
+      color: black;
+      font-weight: 900;
+      text-transform: uppercase;
+      box-shadow: 3px 3px 1px 1px black;
+    }
+
+    &-price {
+      width: fit-content;
+      width: -moz-fit-content;
+      font-size: 1.5rem;
+      padding: 0.5rem;
+      background-color: $theme;
+      color: white;
+      font-weight: 100;
+      text-transform: uppercase;
+    }
+  }
+
+  // &__card-box {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   justify-content: space-between;
+  //   @include breakpoint(mobile-landscape) {
+  //     // flex-direction: column;
+  //   }
+  // }
+
+  // &__card {
+  //   width: 30%;
+  //   border: solid rgb(207, 207, 207) 0.01rem;
+  //   margin: 0.5rem;
+  //   align-items: flex-end;
+  //   @include breakpoint(mobile-landscape) {
+  //     width: 47%;
+  //   }
+
+  //   &-img {
+  //     object-fit: contain;
+  //     object-position: center;
+  //     width: 100%;
+  //     height: 20vh;
+  //     background-color: whitesmoke;
+  //     @include breakpoint(mobile-landscape) {
+  //       height: 10vh;
+  //       object-fit: contain;
+  //       object-position: right;
+  //     }
+  //   }
+  //   &-title {
+  //     width: 100%;
+  //     font-size: 1.2rem;
+  //     font-weight: 500;
+  //     text-transform: uppercase;
+  //     padding: 0.5rem;
+  //   }
+  // }
+}
+
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1rem;
+}
+
+.btn-container button {
+  padding: 1rem;
+  font-size: 1.4rem;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  &:hover {
+    background-color: whitesmoke;
+  }
+}

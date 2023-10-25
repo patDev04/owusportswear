@@ -1,0 +1,20 @@
+@import "../../Sass/Variables.scss";
+
+.popularSearch {
+  margin: 15rem 0;
+}
+.popular-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 24rem;
+
+  @include breakpoint(tablet-portrait) {
+    padding: 0 2rem;
+  }
+}
+
+.popularStyledBtn {
+  margin: 1rem;
+}

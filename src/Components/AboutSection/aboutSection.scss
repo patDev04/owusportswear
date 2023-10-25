@@ -1,0 +1,50 @@
+@import "../../Sass/Variables.scss";
+.bo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+}
+.boost {
+  width: 100%;
+  margin: 8rem 24rem;
+  column-count: 2;
+  column-gap: 2rem;
+
+  @include breakpoint(tablet-landscape) {
+    margin: 0 0rem;
+    padding: 3rem;
+  }
+
+  @include breakpoint(mobile-landscape) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: 24px;
+    margin-bottom: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+
+  &__group {
+    margin-bottom: 2rem;
+
+    &-header {
+      margin-bottom: 1rem;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    &-text {
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+}

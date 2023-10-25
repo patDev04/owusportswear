@@ -1,0 +1,68 @@
+@import "../../Sass/Variables.scss";
+
+.offerproduct {
+  &-container {
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+
+    @include breakpoint(tablet-portrait) {
+      grid-template-columns: repeat(6, 1fr);
+      flex-wrap: unset;
+      overflow: scroll;
+      overflow-y: hidden;
+    }
+  }
+}
+
+.opCard {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px;
+  @include breakpoint(mobile-landscape) {
+    width: 40vw;
+  }
+
+  &-img {
+    height: 30vh;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+    margin-bottom: 1rem;
+  }
+
+  &-content {
+  }
+  &-category {
+    color: grey;
+    font-size: 1.3rem;
+  }
+  &-title {
+    margin-top: 1rem;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+  }
+
+  &-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  &-price {
+    width: fit-content;
+    width: -moz-fit-content;
+    padding: 0 0.5rem;
+    font-size: 1.6rem;
+    background-color: $theme;
+    color: white;
+    font-weight: 600;
+  }
+}

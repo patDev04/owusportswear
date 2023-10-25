@@ -1,0 +1,47 @@
+@import "../../Sass/Variables.scss";
+
+.shopby {
+  text-align: center;
+  margin: 5rem 0;
+  @include breakpoint(mobile-landscape) {
+    margin: 15rem 0;
+  }
+
+  &-header {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: "Tourney", cursive;
+    margin: 1rem 0;
+  }
+
+  &-img-container {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    @include breakpoint(tablet-portrait) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &-img-container {
+    & img {
+      width: 10rem;
+      height: 10rem;
+      object-fit: contain;
+      object-position: center;
+    }
+
+    & article {
+      margin: 0 1rem;
+      cursor: pointer;
+    }
+  }
+
+  &_link {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #363636;
+  }
+}
