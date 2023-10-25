@@ -1,8 +1,8 @@
-import React from 'react';
-import './login.scss';
-import { Link } from 'react-router-dom';
-import { UserOutlined, MailOutlined } from '@ant-design/icons';
-import { Input } from 'antd';
+import React from "react";
+import "./login.scss";
+import { Link } from "react-router-dom";
+import { MailOutlined } from "@ant-design/icons";
+import { Input } from "antd";
 
 const Login = () => {
   return (

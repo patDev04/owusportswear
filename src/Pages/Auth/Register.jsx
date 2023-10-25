@@ -1,17 +1,13 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { UserOutlined, MailOutlined, UserAddOutlined } from '@ant-design/icons';
-import { Input } from 'antd';
-import { RiLockPasswordLine } from 'react-icons/ri';
-import { sendSignInLinkToEmail, signInWithPopup } from 'firebase/auth';
-import { googleAuth, auth } from './../../firebase';
-import { toast } from 'react-toastify';
+import React, { useState } from "react";
+import { MailOutlined } from "@ant-design/icons";
+import { Input } from "antd";
+import { sendSignInLinkToEmail } from "firebase/auth";
+import { auth } from "./../../firebase";
+import { toast } from "react-toastify";
 // require('dotenv').config();
 
 const Register = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [confirm, setConfirm] = useState('');
+  const [email, setEmail] = useState("");
 
   const config = {
     url: process.env.REACT_APP_REDIRECT_URL,
@@ -25,8 +21,8 @@ const Register = () => {
       toast.success(
         `You have succesfully registered and a link has been sent to ${email}`
       );
-      window.localStorage.setItem('emailForRegister');
-      setEmail('');
+      window.localStorage.setItem("emailForRegister");
+      setEmail("");
     } catch (error) {
       console.log(error);
     }

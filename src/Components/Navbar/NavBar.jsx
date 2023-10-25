@@ -5,14 +5,8 @@ import logo from "../../Images/logo-black.svg";
 import InformationStrip from "../../Components/InformationStrip/InformationS";
 import { BiMenu } from "react-icons/bi";
 import NavData from "../../Data/MenuData";
-// import { useGlobalContext } from "../../Data/content";
-import {
-  AiOutlineUser,
-  AiOutlineSearch,
-  AiOutlineShoppingCart,
-} from "react-icons/ai";
-import { AudioOutlined } from "@ant-design/icons";
-import { Input, Space } from "antd";
+import { AiOutlineUser, AiOutlineShoppingCart } from "react-icons/ai";
+import { Input } from "antd";
 import SideBar from "./../Sidebar/SideBar";
 
 const { Search } = Input;
