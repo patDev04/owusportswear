@@ -1,6 +1,10 @@
 {
   "name": "owusportswear",
-  "homepage": "http://pa-may.github.io/owusportswear",
+  "homepage": "https://pa-may.github.io/owusportswear",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/patDev04/owusportswear.git"
+  },
   "version": "0.1.0",
   "private": true,
   "dependencies": {
